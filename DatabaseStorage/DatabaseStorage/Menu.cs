@@ -12,19 +12,19 @@ namespace DatabaseStorage
         public static void UserMenu()
         {
             Console.WriteLine("\n|___________________MENU___________________|\n");
-              Console.WriteLine("|1.Work With User Data                     |\n" +
-                                "|2.Work With Products Data                 |\n" +
-                                "|3.Work With Inventory Data                |\n" +
-                                "|4.Exit                                    |\n" +
-                                "|Else. Clear Window                        |\n");
+            Console.WriteLine("|1.Work With User Data                     |\n" +
+                              "|2.Work With Products Data                 |\n" +
+                              "|3.Work With Inventory Data                |\n" +
+                              "|4.Exit                                    |\n" +
+                              "|Else. Clear Window                        |\n");
             int i = 0;
             try
             {
                 i = int.Parse(Console.ReadLine());
             }
             catch (FormatException e)
-            { 
-                Console.WriteLine(e.Message); 
+            {
+                Console.WriteLine(e.Message);
                 UserMenu();
             }
             switch (i)
@@ -37,7 +37,7 @@ namespace DatabaseStorage
                     break;
                 case 3:
                     InventorySwitchMenu(i);
-                    break;  
+                    break;
                 case 4:
                     return;
                 default:
@@ -60,7 +60,7 @@ namespace DatabaseStorage
                 i = int.Parse(Console.ReadLine());
             }
             catch (FormatException e)
-            { 
+            {
                 Console.WriteLine(e.Message);
                 UserSwitchMenu(i);
             }
@@ -82,7 +82,7 @@ namespace DatabaseStorage
                     Console.Clear();
                     UserMenu();
                     break;
-                default :
+                default:
                     Console.Clear();
                     UserSwitchMenu(i);
                     break;
@@ -103,7 +103,7 @@ namespace DatabaseStorage
                 i = int.Parse(Console.ReadLine());
             }
             catch (FormatException e)
-            { 
+            {
                 Console.WriteLine(e.Message);
                 ProductsSwitchMenu(i);
             }
@@ -175,5 +175,5 @@ namespace DatabaseStorage
 
             }
         }
-    }   
+    }
 }

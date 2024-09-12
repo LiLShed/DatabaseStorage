@@ -71,7 +71,7 @@ namespace DatabaseStorage
                         ReadAllUsers();
                         break;
                     case 2:
-                    
+
                         connection.Open();
                         Console.Write("\nEnter User, whose data u want to read - ");
                         string username = Console.ReadLine();
@@ -94,7 +94,7 @@ namespace DatabaseStorage
                         Menu.UserSwitchMenu(0);
                         break;
                 }
-                    connection.Close();
+                connection.Close();
             }
             Menu.UserMenu();
         }
@@ -144,7 +144,7 @@ namespace DatabaseStorage
                         UPDATEuserRole = "user";
                         break;
                 }
-                string sql = "UPDATE Users SET Username = @UPDATEusername, PasswordHash = @passwordHash, UserRole = @userRole WHERE Username = @username"; 
+                string sql = "UPDATE Users SET Username = @UPDATEusername, PasswordHash = @passwordHash, UserRole = @userRole WHERE Username = @username";
                 using (SqlCommand cmd = new SqlCommand(sql, connection))
                 {
                     cmd.Parameters.AddWithValue("@username", username);
@@ -243,7 +243,7 @@ namespace DatabaseStorage
             }
             Menu.UserMenu();
         }
-        
+
         public void ProductDataRead()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -407,8 +407,8 @@ namespace DatabaseStorage
         public void InventoryDataWrite()
         {
             //make to find a productID by name , and after enter his quantities
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
                 connection.Open();
                 Console.WriteLine("Connection to DataBase is successful.");
                 Console.Write("Enter ProductName that ypu want record in Inventory  - ");
@@ -416,22 +416,22 @@ namespace DatabaseStorage
 
                 string query = "SELECT ProductID FROM Products WHERE ProductName = @ProductName";
 
-                SqlCommand command = new SqlCommand(query, connection); 
+                SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@ProductName", productName);
                 int productID = 0;
                 try
                 {
-                    object result = command.ExecuteScalar();  // Выполняем запрос и возвращаем первое значение
+                    object result = command.ExecuteScalar();
                     if (result != null)
                     {
-                        productID = Convert.ToInt32(result);  // Преобразуем результат в int
+                        productID = Convert.ToInt32(result);
                     }
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"An error occurred: {ex.Message}");
                 }
-                Console.WriteLine(productID);    
+                Console.WriteLine(productID);
                 Console.Write($"\nEnter quantityIN of {productName} in Inventory  - ");
                 int quantityIN = 0;
                 try
@@ -464,7 +464,7 @@ namespace DatabaseStorage
                     Console.WriteLine("Data was recorded.");
                 }
                 connection.Close();
-                }
+            }
             Menu.UserMenu();
         }
 
@@ -497,7 +497,7 @@ namespace DatabaseStorage
                 //    }
                 //}
 
-                string sql = "SELECT InventoryID, Products.ProductName, Inventory.ProductID, QuantityIn, QuantityOut, TransactionDate From Inventory"+
+                string sql = "SELECT InventoryID, Products.ProductName, Inventory.ProductID, QuantityIn, QuantityOut, TransactionDate From Inventory" +
                             "\nJOIN Products ON Products.ProductID = Inventory.ProductID";
 
                 using (SqlCommand cmd = new SqlCommand(sql, connection))
