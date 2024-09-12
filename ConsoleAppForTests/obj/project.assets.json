@@ -1692,11 +1692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\traineeCSHARP\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
+      "projectUniqueName": "D:\\ShediTrainee\\traineeCSHARP\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
       "projectName": "ConsoleAppForTests",
-      "projectPath": "D:\\traineeCSHARP\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
+      "projectPath": "D:\\ShediTrainee\\traineeCSHARP\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
       "packagesPath": "C:\\Users\\dshel\\.nuget\\packages\\",
-      "outputPath": "D:\\traineeCSHARP\\ConsoleAppForTests\\obj\\",
+      "outputPath": "D:\\ShediTrainee\\traineeCSHARP\\ConsoleAppForTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dshel\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj": {}
+    "D:\\ShediTrainee\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj": {}
   },
   "projects": {
-    "D:\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj": {
+    "D:\\ShediTrainee\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj",
+        "projectUniqueName": "D:\\ShediTrainee\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj",
         "projectName": "StorageDataBaseBasic",
-        "projectPath": "D:\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj",
+        "projectPath": "D:\\ShediTrainee\\traineeCSHARP\\StorageDataBaseBasic\\StorageDataBaseBasic.csproj",
         "packagesPath": "C:\\Users\\dshel\\.nuget\\packages\\",
-        "outputPath": "D:\\traineeCSHARP\\StorageDataBaseBasic\\obj\\",
+        "outputPath": "D:\\ShediTrainee\\traineeCSHARP\\StorageDataBaseBasic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dshel\\AppData\\Roaming\\NuGet\\NuGet.Config",

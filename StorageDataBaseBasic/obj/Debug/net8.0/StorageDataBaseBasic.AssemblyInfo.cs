@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StorageDataBaseBasic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+158befb97b2da601b3265f06bde1532373a7bda6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+928c2533a9168dfd1a6358d5f667d47d4d70cde0")]
 [assembly: System.Reflection.AssemblyProductAttribute("StorageDataBaseBasic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StorageDataBaseBasic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

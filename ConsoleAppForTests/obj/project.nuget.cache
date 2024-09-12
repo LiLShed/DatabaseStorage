@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vkj/0P3kO8A=",
+  "dgSpecHash": "Z12EHWOvKgI=",
   "success": true,
-  "projectFilePath": "D:\\traineeCSHARP\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
+  "projectFilePath": "D:\\ShediTrainee\\traineeCSHARP\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dshel\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dshel\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
