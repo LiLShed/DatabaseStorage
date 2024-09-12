@@ -421,10 +421,10 @@ namespace DatabaseStorage
                 int productID = 0;
                 try
                 {
-                    object result = command.ExecuteScalar();  // Выполняем запрос и возвращаем первое значение
+                    object result = command.ExecuteScalar();  
                     if (result != null)
                     {
-                        productID = Convert.ToInt32(result);  // Преобразуем результат в int
+                        productID = Convert.ToInt32(result);  
                     }
                 }
                 catch (Exception ex)
